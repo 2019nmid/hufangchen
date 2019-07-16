@@ -603,3 +603,7 @@ body { background:#fff url(../images/body-bj.png) repeat-x;}/*上部分颜色背
 .list2 a:hover {  
     color: #fff;
 }
+
+.send_font {
+    color: rgb(245, 242, 50);
+}

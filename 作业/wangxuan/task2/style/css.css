@@ -1,0 +1,599 @@
+/*
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input {
+    padding: 0; 
+    margin: 0 auto; 
+    font-family: arial;
+}*/
+
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #111;
+    background: #fff;
+}
+
+
+body {
+    padding-top: 30px;
+}
+
+body, td, th {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+
+
+body {
+    display: block;
+}
+
+ul li {
+    list-style: none;
+} 
+img {
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:none;
+    color: #3377aa;
+}
+
+
+img {
+    vertical-align: bottom;
+}
+
+
+
+
+#nav {
+    width: 950px;
+    height: 34px;
+    margin: 0px auto 25px;
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#nav h1 a {
+    display: block;
+    float: left;
+    height: 34px;
+    width: 160px;
+    background: url(../images/nav_douban.png) no-repeat;
+
+}
+
+
+/*
+#nav div {
+    display: block;
+}*/
+
+
+/*
+#nav h1 img {
+    height: 34px;
+    width: 160px;
+}*/
+
+#nav .search {
+    display: inline-block;
+    /*vertical-align: middle; flex使vertical-align属性失效*/
+
+    position: relative;
+/*绝对定位与固定定位的盒子不参与flex布局。不包括相对定位*/
+    width: 270px;
+    height: 30px;
+
+
+    border: 1px solid #c3c3c3;
+}
+
+.input input {
+    width: 240px;
+    border: none;
+    font-size: 13px;
+    height: 20px;
+
+
+    padding: 5px;
+
+}
+.input , .button {
+    
+    margin-right: 3px;
+    /*vertical-align: middle;*/
+
+    text-transform: none;/*控制文本大小写*/
+    text-indent: 0px;/*缩进*/
+    text-shadow: none;/*对文本设置阴影*/
+    text-align: start;/*内容对齐开始边界*/
+    cursor/*设置光标样式*/: text;
+    font: 400 13.3333px Arial;
+}
+
+.button input {
+
+    margin: 0 3px 0 0;
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: transparent/**/;
+    background: transparent;
+    background: url(../images/nav_btn.png) no-repeat ;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #c3c3c3;
+}/*修改placeholder提示信息颜色*/
+
+input:focus {
+    outline: none;
+    }/*点击表单，输入框获得焦点后不变蓝*/
+
+
+
+#nav .items {
+    display: inline-block;
+    /*vertical-align: middle;/*把此元素放置在父元素的中部   flex使失效*/
+
+
+    width: 482px;
+    height: 22px;
+    overflow: hidden;
+}
+.items a {
+
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-bottom: 1px;
+    margin-left: 20px;
+
+}
+.items a img {
+    width: 40px;
+    height: 20px; 
+}
+
+
+
+
+
+
+
+
+
+#header {
+    height: 304px;
+    border: #3377aa solid 2px;
+    background-color: #edf4ed;
+}
+
+
+
+
+
+
+
+
+#contents {
+   
+    /*margin: 0 auto;*/
+    /*padding: 1px;*/
+    border: #45673e solid 2px;
+    background-color: #fff;
+    /*overflow: hidden;*/
+}
+
+
+#topics, #videos, #teams, #musics, #city {
+   /* width: 950px;
+    margin: 0 auto;
+    
+    
+    border: #3377aa solid 2px;
+
+*/
+
+width: 100%;
+
+    background-color: #fff;
+}
+
+
+#columns, #films, #books, #shop {
+  /*  width: 950px;
+    margin: 0 auto;
+*/
+
+
+    padding: 40px 0 20px;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+
+
+.wrapper {
+
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+
+.section .wrapper {
+    zoom: 1;
+}
+
+.section .sideL {
+    float: left;
+    width: 100px;  
+    margin-right: 20px;
+}
+
+.section .sideR {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+
+.section .main {
+    overflow: hidden;
+}
+.main .mod {
+    overflow: hidden;
+}
+
+
+#topics .online li {
+    margin-top: 10px;
+    color: #999;
+}
+
+.topics_title {
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.mod {
+    margin-bottom: 30px;
+}
+.mod {
+    width: auto;
+    zoom: 1;
+    margin-bottom: 35px;
+}
+
+h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+
+.pl {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}
+
+.topics_name {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #3377aa;
+}
+.topics_subtitle {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 1;
+    color: #aaaaaa;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#topics .albums {
+    float: left;
+    width: 350px;
+    margin-right: 30px;
+    color: #999;
+    font-size: 0;
+    letter-spacing: -0.31em;
+    letter-spacing: normal;
+    word-spacing: -0.43em;
+}
+
+
+
+#topics .albums ul {
+    margin: -10px 0 0 -10px;
+}
+
+#topics .albums li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+}
+.notes li {
+    margin-top: 12px;
+    word-wrap: break-word;
+}
+a:visited {
+    color: #669;
+    text-decoration: none;
+}
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+a:active {
+    color: #fff;
+    text-decoration: none;
+    background: #f93;
+}
+a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #37a;
+}
+a:hover img {
+    color: #fff;
+    background: #fff;
+}
+
+.section .wrapper:before, .section .wrapper:after {
+    content: "\0020";
+    display: block;
+    clear: both;
+}
+
+#topics .note .author {
+    color: #999;
+}
+
+
+.notes {
+    overflow: hidden;
+    zoom: 1;
+    color: #666;
+}
+
+
+.section-title a:link, .section-title a:visited {
+    font-size: 24px;
+}
+
+.section-title a:hover {
+    color: #fff;
+}
+#columns .section-title a {
+    color: #494949;
+}
+
+#columns .section-title a:hover {
+    color: #fff;
+}
+.section-title a {
+    font-size: 24px; 
+}
+
+#columns .time-list li {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#columns .time-list li .cover {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#columns .time-list li .title {
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.38;
+}
+#columns .time-list li .type {
+    color: #999999;
+    line-height: 1;
+    margin-top: 10px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+#videos .section-title a {
+    color: #494949;
+}
+
+#videos .section-title a:hover {
+    color: #fff;
+}
+#videos .video-list.video-rushi {
+    margin-bottom: 25px;
+}
+
+#videos .video-list li {
+    display: inline-block;
+    width: 250px;
+    vertical-align: top;
+    margin-right: 30px;
+}
+
+
+#videos .video-list li .video-cover {
+    height: 140px;
+    margin-bottom: 11px;
+}
+
+#videos .video-list li .video-title {
+    font-size: 13px;
+    line-height: 1.54;
+    color: #494949;
+}
+
+#videos .video-list li .video-cover a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#videos .video-list li .video-cover a span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#videos .video-list li .video-cover a {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 100%;
+    background: center / cover no-repeat;
+}
+
+
+
+
+
+
+#movies a:link, #movies a:visited {
+    color: #27a;
+}
+
+.side-links li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+.tags ul {
+    margin-top: -4px;
+}
+
+.list {
+    font-size: 0;
+    letter-spacing: -.31em;
+}
+
+.list li {
+    display: inline-block;
+    zoom: 1;
+    width: 24.8%;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+
+.tags li {
+    width: 4em;
+    margin-top: 4px;
+    text-align: left;
+}
+/*
+
+.movie_title{
+    font-size:15px;
+    display: inline-block;
+    margin:0 0 10px 0;
+}
+
+.movies a {
+    display: block;
+    float: left;
+}
+*/
+
+
+
+
+
+
+/*
+hr.style {
+    border: 1px dashed #e7e7e7;
+    width: 960px;
+    margin: 16px auto;
+}
+*/
+
+/*
+#footer {
+    width: 960px;
+    margin: 0 auto; 
+    padding: 20px;
+    border: #45673e solid 2px;
+    background-color: #f7f7f7;
+}
+*/
+#footer {
+    width: 950px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    padding: 14px 0;
+    margin-top: 30px;
+    border-top: 1px dashed #dcdcdc;
+    color: #999;
+}
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}

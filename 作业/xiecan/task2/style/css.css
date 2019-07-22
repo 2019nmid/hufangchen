@@ -1,0 +1,1147 @@
+/*www.mafu.com css*//**/
+
+body,ul,p,h1,h2,h3,h4,dl,dd,form,input,textarea,select,form,input,img {
+    padding: 0;
+    margin: 0; 
+    border: 0;
+}/*内外边距为0*/
+body { background-color: #fff;}
+ul li { list-style: none;}/*去掉列表前的序号*/
+a { 
+    cursor: pointer;
+    text-decoration: none;
+}/*链接无下划线*//*鼠标指向链接呈现指母形状*/
+a img {
+    border-width: 0;
+    vertical-align: middle;
+}
+h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+.wrapper {
+    width: 980px;
+    margin: 0 auto;
+}/*每个模块宽度及居中*/
+.wrapper:before, .wrapper:after {
+    content: " ";
+    display: block;
+    clear: both;
+}/*清除浮动*/
+
+.douban-time-side,
+.movie-side-left,
+.group-side-left,
+.book-side-left,
+.music-side-left,
+.market-side-left,
+.city-side-left {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}/*模块左边部分*/
+.hotspot-side-right, 
+.movie-side-right, 
+.group-side-right, 
+.book-side-right, 
+.music-side-right,  
+.market-side-right, 
+.city-side-right {
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}/*模块右边部分*/
+.mod { 
+    width: auto;
+    margin-bottom: 30px;
+}/*模块中间部分*/
+.mod h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+
+.pl {
+    font: 12px Arial, Helvetica, sans-serif;
+    line-height: 150%;
+    color: #666666;
+}/*带····的导航*/
+.pl a { color: #37a;}
+
+#douban-time a:hover,
+#shipin a:hover:not(.video-cover),
+#hotspot a:hover,
+#movie a:hover,
+#music a:hover:not(.music-app-lnk),
+#group a:hover,
+#book a:hover:not(.book-app-link),
+#market a:hover,
+#city a:hover,
+#foot a:hover {
+    color: #fff;
+    background-color: #37a;
+}/*鼠标滑过链接*/
+
+
+
+
+
+
+#top_menu {
+    height: 80px;
+    width: 980px;
+    background-color: #fff;
+    margin: 0 auto;
+}/*顶部导航部分*/
+.top_h1 {
+    display: block;
+    width: 70px;
+    height: 34px;
+    font-family: 'Microsoft Yahei';
+    font-weight: normal;
+    line-height: 80px;
+    color: #12be3d;
+}/*顶部导航logo部分*/
+.span_green {
+    font-family: 'Microsoft Yahei';
+    font-weight: normal;
+    color: #12be3d;
+    font-size: 26px;
+    margin-left: 70px;
+    letter-spacing: -5px;
+}
+.span_green2 {
+    font-family: 'Microsoft Yahei';
+    font-weight: normal;
+    color: #12be3d;
+    font-size: 26px;
+    letter-spacing: -5px;
+}
+.span_blow {
+    font-family: 'Microsoft Yahei';
+    font-weight: normal;
+    color: #0cc1e8;
+    font-size: 26px;
+    letter-spacing: -5px;
+}
+.span_yellow {
+    font-family: 'Microsoft Yahei';
+    font-weight: normal;
+    color: #f4d877;
+    font-size: 26px;
+    letter-spacing: -5px;
+}
+.search {
+    position: relative; 
+    width: 270px;
+    height: 30px;
+    border: 1px solid #c3c3c3;
+    left: 180px;
+    top: -40px;
+}/*顶部导航搜索框部分*/
+.inp {
+    display: block;
+    height: 30px;
+    overflow: hidden;
+}
+.inp input {
+    width: 240px;
+    height: 30px;
+    font-size: 13px;
+    padding:0 5px;
+    color: #c3c3c3;
+    outline: none;
+}/*顶部导航搜索框文字部分*/
+.bo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    overflow: hidden;
+}
+.bo input {
+    width: 30px;
+    height: 30px;
+    background: url(../images/search.png) no-repeat;
+    outline: none;
+    cursor: pointer;
+}/*顶部导航搜索框图片部分*/
+.sort {
+    float: right;
+    margin-top: -70px;
+}/*顶部导航模块部分*/
+.sort li { 
+    display: inline-block;
+    margin: 0 0 0 16px;
+}
+.sort a {
+    font-family: 'SimHei';
+    font-size: 22px;
+    font-weight: bold;
+}
+.read {
+    color: #3e2d2c;
+}
+.movie {
+    color: #5898cd;
+}
+.music {
+    color: #fe9549;
+}
+.team {
+    color: #44a2c1;
+}
+.city {
+    color: #ea5f13;
+}
+.FM {
+    color: #7adade;
+}
+.time {
+    color: #404242;
+}
+.goods {
+    color: #23db4e;
+}
+
+
+#zhuye {
+    position: relative;
+    height: 310px;
+    overflow: visible;
+    background: url(../images/zhuye.png) no-repeat;
+    background-size: cover;
+}/*主页部分*/
+.download {
+    position: absolute;
+    height: 120px;
+    top: 0;
+    bottom: 0;
+    margin: auto auto auto 756px;
+}/*主页下载app部分*/
+.download p {
+    margin: 7px 0 20px 0;
+    font-size: 25px;
+    color: #111;
+    line-height: 24px;
+}
+.down_app_text  {
+    display: inline-block;
+    border-radius: 4px;
+    margin-right: 2px;
+    background: #00b51d;
+    color: #fff;
+    padding: 9px 21px;
+    font-size: 13px;
+}/*主页下载app点击下载部分*/
+.down_app_quick {
+    display: inline-block;
+    position: relative;
+}
+.down_app_quick_link_qr {
+    display: inline-block;
+    border: 1px solid #48aa0d;
+    border-radius: 2px;
+}
+.app_qr_expand {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 20px 5px;
+    border-radius: 2px;
+    font-size: 13px;
+    background: #fff;
+    line-height: 13px;
+}/*主页下载app扫码下载部分*/
+
+.login {
+    display: inline-block;
+    position: relative;
+    box-sizing:border-box;
+    height: 298px;
+    width: 300px;
+    padding: 30px 10px 10px;
+    overflow: hidden;
+    margin-left: 960px;
+    font: normal 13px Helvetica,Arial,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}/*主页登录部分*/
+.login_tabs {
+    margin-bottom: 10px;
+}/*主页登录顶部部分*/
+.tabs_star {
+    border-bottom: 1px solid #ececec;
+    color: #9b9b9b;
+}
+.login_tabs li {
+    display: inline-block;
+    width: 49%;
+    font-size: 13px;
+    line-height: 2;
+    text-align: center;
+    cursor: pointer;
+}
+.login_tabs li.on {
+    color: #333;
+    border-bottom: 1px solid #494949;
+}/*主页登录顶部短信登录/注册 密码登录部分*/
+.tabs_quick { display: none;}
+.tab_switch {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    right: 10px;
+    overflow: visible;
+}/*主页登录顶部二维码登录部分*/
+.tab_switch_icon .icon-switch.quick { background-image: url(../images/switch_icon_quick.png);}/*主页登录顶部二维码登录转换链接部分*/
+.tab_switch_icon .icon-switch { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+    background-size: 30px;
+}
+.tab_switch_icon .icon-switch.start { background-image: url(../images/switch_icon_start.png);}/*主页登录顶部短信登录/注册 密码登录转换链接部分*/
+.login .start { display: none;}
+
+.account_from { position: relative;}/*主页登录短信登录/注册部分*/
+.account_from_tips {
+    color: #9b9b9b;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.account_from_tips a {
+    color: #41ac52;
+}/*主页登录短信登录/注册 协议部分*/
+.account_from_raw {
+    position: relative;
+    margin-bottom: 10px;
+}
+.account_form_raw_phone {
+    position: relative;
+    width: 100%;
+}
+.account_form_raw_phone input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 60px;
+    padding-right: 40px;
+    background: #fff;
+}
+.account_form_raw_area {
+    width: 50px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    overflow: hidden;
+}
+.account_form_raw_area_lable {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding-right: 1px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 36px;
+    background: none;
+    cursor: pointer;
+}
+.account_form_raw_area_lable:after {
+    content: " ";
+    position: absolute;
+    height: 22px;
+    top: 6px;
+    right: 1px;
+    width: 0;
+    border-right: 1px solid #e4e6e5;
+}/*主页登录短信登录/注册 手机号部分*/
+.account_form_label { 
+    display: none;
+    float: left;
+    line-height: 40px;
+    height: 40px;
+    width: 60px;
+    font-size: 13px;
+}
+.account_form_raw_codes {
+    display: block;
+    position: relative;
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.account_form_raw_codes input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #fff;
+}
+.account_form_input { 
+    width: 280px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid #e4e6e5;
+}
+.account_form_raw_filed_codes {
+    position: absolute;
+    line-height: 35px;
+    padding: 0 10px;
+    right: 0;
+    top: 0;
+}
+.account_form_raw_filed_codes a {
+    color: #41ac52;
+    line-height: 35px;
+}/*主页登录短信登录/注册 验证码部分*/
+.account_form_field_submit {
+    position: relative;
+    width: 280px;
+}
+.account_form_field_submit .btn {
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    font-weight: 400px;
+    font-size: 15px;
+    border-radius: 3px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(66,189,86,.5);
+}/*主页登录短信登录/注册 登录部分*/
+.account_foot p { margin: 10px 0;}
+.account_foot_link { float: right;}
+.account_foot_link a { color: #41ac52;}
+.account_foot_remember { display: inline-block;}
+.account_foot_remember input { margin-right: 4px;}/*主页登录短信登录/注册 自动登录，收不到验证码部分*/
+.account_foot::after { 
+    content: "";
+    clear: both;
+}
+.account_3rd {
+    position: relative;
+    width: 250px;
+    border-top: 1px solid #ddd;
+    top: 0;
+    bottom: 30px;
+}
+.account_3rd_hd {
+    display: inline-block;
+    color: #9b9b9b;
+    font-size: 11px;
+    text-align: center;
+}
+.account-form-3rd-bd { 
+    display: inline-block;
+    padding-top: 10px;
+    text-align: center;
+}
+.account-form-3rd-bd a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 22px;
+    width: 22px;
+    margin: 0 0 0 12px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 36px;
+}
+.link_3rd_wx { background-image: url(../images/link_3rd_wx.svg);}
+.link_3rd_wb { background-image: url(../images/link_3rd_wb.svg);}/*主页登录短信登录/注册 三方登录部分*/
+.account_tabs_quick { 
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+}
+.account_tabs_quick_scan {
+    display: inline-block;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+    line-height: 172px;
+}
+.account_tabs_quick_scan img { 
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.account_tabs_quick_text {
+    display: inline-block;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 3px 20px;
+    color: #494949;
+    background-color: rgba(0,0,0,.08);
+    background-image: none;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+    background-size: 29px;
+    background-position: 0;
+    background-repeat: no-repeat;
+}/*主页登录短信登录/注册 二维码登录部分*/
+
+
+#hotspot {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}/*热点内容部分*/
+/*热点内容右边部分*/
+.hotspot-side-right-img { margin: 10px 0px;}/*热点内容右边图片部分*/
+.hotspot-side-right-topic {
+    margin-bottom: 30px;
+    width: auto;
+}
+.hotspot-side-right-topic h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+.hotspot-side-right-topic ul { margin-top: -4px;}
+.rec_topics { 
+    margin-bottom: 15px;
+    margin-top: 10px;
+    color: #999;
+}
+.rec_topics_name {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #3377aa;
+}
+.rec_topics_subtitle {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    line-height: 1;
+    color: #aaaaaa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}/*热点内容右边文字部分*/
+.hotspot-main { overflow: hidden;}/*热点内容主体部分*/
+.hotspot-main-img {
+    float: left;
+    width: 360px;
+    margin-right: 30px;
+    color: #999;
+}
+.hotspot-main-img ul { margin: -10px 0 0 -10px;}
+.hotspot-main-img li {
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+    width: 170px;
+    vertical-align: top;
+    font-size: 12px;
+    margin: 10px 0 0 10px;
+}
+.pic {
+    display: inline-block;
+    width: 170px;
+    max-height: 170px;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.pic img { width: 170px;}
+.hotspot-main-img a {
+    color: #37a;
+}
+/*热点内容主体左边图片部分*/
+.hotspot-main-notes {
+    overflow: hidden;
+    color: #666;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 2.0;
+}
+.author { color: #999;}
+.hotspot-main-notes a {
+    color: #37a;
+}
+/*热点内容主体中间文字部分*/
+
+
+#douban-time {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    min-height: 200px;
+}/*豆瓣时间部分*/
+.douban-time-title h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+.douban-time-title a {
+    color: #494949;
+}/*豆瓣时间左边文字部分*/
+.douban-time-main { overflow: hidden;}
+.douban-time-main h2 {
+    font: 15px Arial, Helvetica, sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+.time-list li {
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.time-list li .cover {
+    display: block;
+    margin-bottom: 10px;
+    position: relative;
+}
+.time-list li img {
+    width: 100px;
+    height: 140px;
+}
+.title1 {
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.38;
+}
+.time-list li .type {
+    display: block;
+    color: #999999;
+    line-height: 1;
+    margin-top: 10px;
+    font: 12px Helvetica,Arial,sans-serif;
+}
+.douban-time-main { overflow: hidden;}/*豆瓣时间主体部分*/
+.video-list-bianzui { margin-bottom: 25px;}
+.video-list-bianzui li {
+    display: inline-block;
+    width: 240px;
+    vertical-align: top;
+    margin-right: 30px;
+}
+.video-cover {
+    height: 140px;
+    margin-bottom: 11px;
+}
+.video-cover a {
+    position: relative;
+    display: block;
+    color: #fff;
+    height: 100%;
+    background: center / cover no-repeat;
+}
+.video-cover a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.video-cover a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.video-title {
+    font-size: 13px;
+    line-height: 1.54;
+    color: #494949;
+}/*视频主体部分*/
+
+#movie {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    min-height: 200px;
+}/*电影部分*/
+.movie-side-right a { color: #27a;}
+.movie-side-left a { color: #27a;}
+
+
+
+.side-left-title a { font-size: 24px;}
+.side-left-links { margin-bottom: 40px;}
+.side-left-links li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}/*电影左边导航部分*/
+.side-right-classify ul { margin-top: -4px;}
+.side-right-classify li {
+    display: inline-block;
+    width: 4em;
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-align: left;
+}/*电影右边导航分类部分*/
+.side-right-rank li {
+    margin-bottom: 6px;
+    padding-bottom: 5px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+}
+.side-right-rank ol {
+    margin-left: -30px;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}/*电影右边导航近期热门部分*/
+.movie-main { overflow: hidden;}
+.movie-main-list ul { margin-top: -40px;}
+.movie-main-list li {
+    display: inline-block;
+    zoom: 1;
+    width: 23.8%;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.movie-main-list .pic {
+    height: 145px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.movie-main-list img {
+    width: 100px;
+}
+.movie-main-list .title {
+    line-height: 1.45;
+    font-size: 13px;
+    margin-bottom: 4px;
+    word-wrap: break-word;
+}
+.title a { color: #333;}
+
+.rating {
+    margin-bottom: 4px;
+}
+
+.rating i {
+    margin-left: 4px;
+    color: #e09015;
+    text-align: center;
+    font-size: 12px;
+}/*电影中间评分部分*/
+.bn-link {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 2px 10px;
+    border-radius: 2px;
+    background: #1c8bd0;
+    color: #fff;
+}/*电影中间部分*/
+
+/*小组部分*/
+#group a { color: #017a85;}
+/*小组左边导航部分*/
+.group-side-right-nav { margin-bottom: 40px;}
+.group-side-right-nav li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.group-cate { margin-bottom: 10px;}
+.group-cate ul { margin-left: -10px;}
+.group-cate li {
+    display: inline-block;
+    zoom: 1;
+    margin-left: 10px;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+.cate-label {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+    color: #333;
+}/*小组右边导航部分*/
+.group-main { overflow: hidden;}
+.group-main-list ul {
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.group-main-list li {
+    display: inline-block;
+    width: 238px;
+    margin-left: 30px;
+    margin-top: 30px;
+    text-align: left;
+    overflow: hidden;
+    color: #999;
+}
+.group-main-list { 
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.group-main-list .pic1 {
+    float: left;
+    margin-right: 15px;
+}
+.group-main-list img { width: 48px;}
+.group-main-list .info {
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+    overflow: hidden;
+    zoom: 1;
+}
+.group-main-list .title {
+    margin-bottom: 5px;
+}/*小组中间部分*/
+
+
+/*读书部分*/
+#book {
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+.book-side-left-title a {
+    color: #4a2f14;
+    font-size: 24px;
+}
+.book-side-left-nav { margin-bottom: 40px;}
+.book-side-left-nav li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.book-side-left-nav a {
+    color: #614e3c;
+    font-size: 14px;
+}/*读书左边导航文字部分*/
+.book-app ul { margin-top: -15px;}
+.book-app a { 
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    color: #614e3c;
+}
+.book-app-link { 
+    display: block;
+}
+.app-icon1 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    background: url(../images/book-app.png) no-repeat;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px #999;
+}/*读书左边导航app部分*/
+.book-side-right-cate {
+    overflow: hidden;
+    margin-top: -10px;
+}
+.book-cate {
+    padding-top: 10px;
+    margin: -1px 0 10px 0;
+    border-top: 1px solid #eaeaea;
+}
+.cate-label {
+    width: auto;
+    font-size: 12px;
+    color: #999;
+}
+.book-cate li {
+        display: inline-block;
+        margin-left: 10px;
+}
+.book-cate a { 
+    color: #614e3c;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}/*读书右边导航部分*/
+.book-list ul { margin-top: -40px;}
+.book-list li {
+    display: inline-block;
+    width: 130px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.pic2 {
+    width: 130px;
+    height: 148px;
+    overflow: hidden;
+}
+.pic2 img {
+    width: 100px;
+}
+.price {
+    height: 19px;
+    margin-bottom: 4px;
+    color: #666
+}
+.mod:after {
+    content: '\0020';
+    display: block;
+    clear: both;
+}
+.book-main-mod2 { margin-left: 120px;}
+/*读书中间部分*/
+
+#music {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}/*音乐部分*/
+.music-side-left-title a {
+    color: #f38c00;
+    font-size: 24px;
+}
+.music-side-left-links { margin-bottom: 40px;}
+.music-side-left-links li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.music-side-left-links a {
+    color: #555d53;
+    font-size: 14px;
+}/*音乐左边导航链接部分*/
+.music-app ul { margin-top: -15px;}
+.music-app li { margin-top: 15px;}
+.music-app a { 
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    color: #555d53;}
+.music-app-lnk { display: block;}
+.app-icon2 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    background: url(../images/music-app1.png) no-repeat;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px #999;
+}
+.app-icon3 {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+    background: url(../images/music-app2.png) no-repeat;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 2px #999;
+}/*音乐左边导航app部分*/
+.music-side-right-rank { 
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.num, .pic3 {
+    float: left;
+    max-height: 61px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.pic3 { 
+    position: relative;
+    cursor: pointer;
+}
+.pic3 img {
+    margin-top: 4px;
+     width: 48px;
+    }
+.music-side-right-rank-text a {
+    color: #555d53;
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+}
+.music-side-right-rank-text-desc {
+    font: 12px Helvetica,Arial,sans-serif;
+    line-height: 1.62;
+    margin-top: 4px;
+    color: #999;
+}/*音乐右边排行部分*/
+.music-main-list1 { margin-bottom: 20px;}
+.music-main-list1 ul { margin-top: -40px;}
+.music-main-list1 li {
+        display: inline-block;
+        width: 130px;
+        margin-top: 40px;
+        vertical-align: top;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: normal;
+        word-spacing: normal;
+}
+.pic4 {
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.music-main-list1 .title {
+    font-size: 12px;
+    color: #666;
+}/*音乐中间上部分*/
+.artist a { color: #555d53;}
+.music-main-list2 ul { margin-top: -40px;}
+.music-main-list2 li {
+    display: inline-block;
+    width: 130px;
+    margin-top: 40px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+.pic5 { position: relative;}
+.pic5 i {
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    left: 26px;
+}/*音乐中间下部分*/
+
+#market {
+    margin-bottom: 30px;
+    min-height: 200px;
+    padding: 40px 0 20px;
+    background: #f7f7f7;
+}/*豆品部分*/
+.market-side-left-title a {
+    color: #1f9432;
+    font-size: 24px;
+}/*豆品左边部分*/
+.market-side-right-topic-item {
+    display: block;
+    margin-bottom: 15px;
+}
+.market-topic-pic {
+    display: block;
+    width: 100%;
+    height: 95px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.market-side-right-topic-footer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #4784B1;
+}
+.market-side-right-topic-footer a { color: #3377A9;}/*豆品部右边分*/
+.market-main { overflow: hidden;}
+.market-main-list li {
+    float: left;
+    width: 240px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+.market-main-list-img { 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+}
+.market-main-list-footer {
+    margin-top: 10px;
+    line-height: 22px;
+    font-size: 16px;
+    clear: both;
+    overflow: hidden;
+}
+.market-price {
+    color: #E55457;
+    float: right;
+}
+.market-main-list-footer a { 
+    line-height: 22px;
+    font-size: 16px;
+    color: #3377A9;
+}/*豆品中间部分*/
+
+#city {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    min-height: 200px;
+}/*同城部分*/
+.city-side-left { height: 300px;}
+.city-side-left-title a {
+    color: #ec5303;
+    font-size: 24px;
+}
+.city-side-left li {
+    position: relative;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.city-side-left li a { color: #643;}/*同城左边部分*/
+.city-cate { margin-bottom: 10px;}
+.cate-label { 
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+.city-cate li { 
+    display: inline-block;
+    margin-left: 10px;
+}
+.city-cate a { 
+    color: #643;
+}
+.city-main-list ul { margin-left: -20px;}
+.city-main-list li { 
+    display: inline-block;
+    width: 238px;
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    letter-spacing: normal;
+    word-spacing: normal
+}
+.pic6 { 
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.info2 {
+    overflow: hidden;
+    color: #666;
+}/*同城右边部分*/
+
+#foot {
+    overflow: hidden;
+    padding: 14px 0;
+    margin-top: 30px;
+    border-top: 1px dashed #dcdcdc;
+    color: #999;
+    font-size: 12px;
+}/*底部*/
+#foot a { color: #669;}
+.foot-left { float: left;}/*底部左边部分*/
+.foot-right { float: right;}/*底部右边部分*/

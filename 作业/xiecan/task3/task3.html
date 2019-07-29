@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>谢灿</title>
+        <link href="style/css.css" rel="stylesheet"><!--调用css-->
+        <script type="text/javascript" src="style/myScript.js"></script>
+    </head>
+
+    <body>
+        <div class="slide-box">
+            <div class="slide-img-block">
+                <div class="slide-loading"></div>
+                <div class="slide-img-border">
+                    <div class="slide-top"></div>
+                    <div class="slide-img-div">
+                        <div class="slide-img-nopadding">
+                            <img class="slide-img" id="slideImg" src='' /><!--图片-->
+                            <div class="slide-block" id="slideBlock"></div><!--裁剪的图片-->
+                            <div class="slide-box-shadow" id="cutBlock"></div><!--裁剪区域-->
+                        </div>
+                        <div class="slide-img-hint-info" id="slideHintInfo"><!--弹出-->
+                            <div class="slide-img-hint">
+                                <div class="slide-icon" id="slideIcon"></div><!--正确、失败的图标-->
+                                <div class="slide-text">
+                                    <span class="slide-text-type" id="slideType"></span><!--正确、失败-->
+                                    <span class="slide-text-content" id="slideContent"></span><!--正确、失败的正文-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-bottom">
+                        <div class="slide-bottom-refresh" id="refreshBtn" title="更换图片"></div><!--换图按钮-->
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-bar">
+                <div class="slide-btn" id="slideBtn"></div><!--拖拽按钮-->
+                <div class="slide-title" id="slideHint">拖动左边滑块完成上方拼图</div><!--提示名称-->
+            </div>
+        </div>
+        <script type="text/javascript" src="style/myScript.js">
+            var dataList = ["0","1"];
+            var options = {
+                dataList: dataList,
+                success:function(){  
+                    console.log("show");  
+                },
+                fail: function(){
+                    console.log("fail");  
+                }
+            };
+            SliderBar("slideBar", options);
+        </script>
+    </body>
+</html>

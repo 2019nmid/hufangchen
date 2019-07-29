@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="big-section">
+        <div class="section">
+            <div class="login-box">
+                <form action="#">
+                    <input type="text" placeholder="用户名" value="admin">
+                    <input type="password" placeholder="密码" value="******">
+                    <button id="btn_login" class="btn-login">登录</button>
+
+                </form>
+                <div class="verifier" id="verifier">
+                    <div class="canvas">
+                        <canvas width="318" height="195" id="canvas"></canvas>
+                        <canvas class="block-canvas" width="318" height="195" id="block"></canvas>
+                        <div class="drag" > <text id="drag_text">拖动左边滑块完成上方拼图</text></div>
+                        <div class="drag-cur" id="drag_cur">
+
+                        </div>
+                    </div>
+
+                    <div class="btn-verier">
+                        <button  class="btn-close" id="btn_close">关闭</button>
+                        <div id="tips" class="tips"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>bilibili.onload</title>
+        <link rel="stylesheet" href="style/task.css">
+        <script>
+            //var timer=null;
+            window.onload=function()
+            {
+                 var oTop=document.getElementById('cont_l_top')
+                 var oImg=oTop.getElementsByTagName('img')
+                 oTop.onmouseover=function()
+                 {
+                     oImg[2].style.display='block'
+                     oImg[1].style.display='none'
+                     oImg[0].style.display='none'
+                 }
+                 oTop.onmouseout=function()
+                 {
+                     oImg[2].style.display='none'
+                     oImg[1].style.display='block'
+                     oImg[0].style.display='block'
+                }
+                var YZ=document.getElementById('yanzheng')
+                var oCont=document.getElementById('cont5')
+                var oBtn=oCont.getElementsByTagName('input')
+                
+                for(var i=0;i<oBtn.length;i++)
+                {
+                    oBtn[i].onmouseover=function()
+                    {
+                        YZ.style.display='block';
+                        elec();
+                    }
+                    oBtn[i].onmouseout=function()
+                    {
+                        YZ.style.display='none';
+                    }
+                    
+                    /*oBtn[i].onclick=function()
+                    {
+                    timer=setTimeout(function(){
+                        YZ.style.display='block';
+                        elec();
+                    },2)
+                    }*/
+                }
+            }
+            
+            function elec()
+            {
+                var YZ=document.getElementById('yanzheng')
+                var images=['p1.jpg','p2.jpg','p3.jpg','p4.jpg','p6.jpg'];
+                var url= 'img/'+images[Math.floor(Math.random()*images.length)];
+                document.getElementById('pic').src=url
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="nav1">
+                <li><img src="img/nav1.png">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href=" ">下载</a></li>
+                <li><a href=" ">音频</a></li>
+                <li><a href=" ">游戏中心</a></li>
+                <li><a href=" ">直播</a></li>
+                <li><a href=" ">会员购</a></li>
+                <li><a href=" ">漫画</a></li>
+                <li><a href=" ">BW</a></li>
+                <li><a href=" ">70年</a></li>
+                <li><img src="img/nav2.png">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><a href=" ">下载App</a></li>
+            </div>
+            <div class="nav5"><a>投稿</a></div>
+            <div class="nav4"><a href=" ">历史</a></div>
+            <div class="nav3"><img src="img/nav4.png"></div>
+            <div class="nav2"><img src="img/nav3.png"></div>                                  
+        </div>
+        <div id="img"><img src="img/img.png" height="96px"></div>
+        <div id="string">
+            <span>登录</span>
+        </div>
+        <div id="content">
+            <div class="cont_l">
+                <div id="cont_l_top">
+                    <div class="toP_1">
+                            <img src="img/right1_1.gif" height="70px" width="70px;" >
+                            <img src="img/right1.png"> 
+                    </div>
+                    <img class="top_2" src="img/right2.png" height="220px" width="480px"> 
+                </div>
+                <div class="cont_1_bott">
+                    <p class="bott_1">扫描二维码登录</p>
+                    <p>请使用<a href=" ">哔哩哔哩客户端</a>
+                        <br>扫码登录
+                        <br>或扫码下载APP</p>
+                </div>
+            </div>
+            <div class="cont_r">
+                <ul>
+                    <li class="cont1">
+                        <input type="text" placeholder="你的手机号/邮箱">
+                        <p>请输入注册时用的邮箱或者手机号呀</p>
+                    </li>
+                    <li class="cont2">
+                        <input type="password" placeholder="密码">
+                        <p>喵，你没输入密码么？</p>
+                    </li>
+                    <li class="cont3">
+                        <input type="checkbox">
+                        记住我<span>&nbsp;&nbsp;&nbsp;&nbsp;不是我自己的电脑上不要勾选此项</span>
+                        <a href=" ">无法验证</a>
+                        <a href=" ">忘记密码</a>
+                    </li>
+                    <li id="cont5">
+                        <input id="INPUT" type="button" value="登录">
+                        <input type="button" value="注册">
+                    </li>
+                    <li class="cont6">
+                        <img src="img/con1.png" width="15px" height="15px;">
+                        <a href=" ">微博账号登录</a>
+                        <img src="img/con2.png" width="16px" height="16px;">
+                        <a href=" "> QQ账号登录</a>
+                    </li>
+                </ul>
+                <div id="yanzheng">
+                    <div><img id="pic" width="270px" height="130px"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="last">
+            <ul>
+                <li class="last_l">
+                   <div id="specil">bilibili</div>
+                   <div><a href=" "> 关于我们</a></div>
+                   <div><a href=" "> 联系我们</a></div>
+                   <div><a href=" "> 加入我们</a></div>
+                   <div><a href=" "> 友情链接</a></div>
+                   <div><a href=" "> bilibili认证</a></div>
+                   <div><a href=" "> Investor Relations</a></div>
+                </li>
+                <li class="last_c">
+                    <div id="specil">传送门</div>
+                    <div><a href=" "> 帮助中心</a></div>
+                    <div><a href=" "> 高级弹幕</a></div>
+                    <div><a href=" "> 活动专题页</a></div>
+                    <div><a href=" "> 侵权申述</a></div>
+                    <div><a href=" "> 活动中心</a></div>
+                    <div><a href=" "> 用户反馈论坛</a></div>
+                    <div><a href=" "> 壁纸站</a></div>
+                    <div><a href=" "> 名人堂</a></div>
+                    <div><a href=" "> 专车号服务中心</a></div>
+                </li>
+                <li class="last_r">
+                    <div><img src="img/last_1.png" width="68px" height="60px"><p><a>客户端下载</a></p></div>
+                    <div><img src="img/last_2.png" width="68px" height="60px"><p><a>新浪微博</a></p></div>
+                    <div><img src="img/last_3.png" width="68px" height="60px"><p><a>官方微信</a></p></div>
+                </li>
+            </ul>
+        </div>
+        <div id="footer">
+            <div class="footer_l">
+                <img src="img/footer.png" height="140px" width="120px">
+            </div>
+            <div class="footer_r">
+                <p>广播电视节目制作经营许可证：（沪）字第1248号 | 网络文化经营许可证：沪网文[2016]2296-134号 | 信息网络传播视听节目许可证：0910417 |
+                    <br> 互联网ICP备案：<a href=" ">沪ICP备13002172号-3</a> 沪ICP证：沪B2-20100043 | 违法不良信息举报邮箱：help@bilibili.com | 违法不良信息举报电话：
+                    <br>4000233233转3 | <a href=" ">营业执照</a>
+
+                    <br><a href=" "><img src="img/f1.png" width="14px" height="14px;">上海互联网举报中心</a> |<a href=" "><img src="img/f2.png" width="18px" height="14px;">12318 全国文化市场举报网站</a> | <a href=" ">沪公网安备 31011002002436号</a> |<a href="">儿童色情信息举报专区</a>
+                       
+                    <br><a href=" ">网上有害信息举报专区：<img src="img/f3.png" width="14px" height="14px;"> 中国互联网违法和不良信息举报中心</a>
+                       
+                    <br>亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听。
+                       
+                    <br>公司名称：上海宽娱数码科技有限公司 | 公司地址：上海市杨浦区政立路485号 | 电话：021-25099888</p>
+            </div>
+        </div>
+    </body>
+</html>

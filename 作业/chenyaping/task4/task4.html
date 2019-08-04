@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ajax</title>
+        <script src="myAjax.js"></script>
+        <style>
+            input{
+                width: 200px;
+                height: 20px;
+                margin: 5px;
+            }
+            #btn{
+               
+                width: 205px;
+                height: 25px;
+                margin: 5px;
+            }
+        </style>
+        <script>
+            window.onload=function(ev)
+            {
+                var oBtn=document.getElementById('btn');
+                var userMail=document.getElementById('userMail')
+                var userPsw=document.getElementById('userPsw')
+                ajax({
+                    type:"post",
+                    url:"task4.php",
+                    data:{"user":this.getAttribute("user")},
+                    timeout: 3000,
+                    success: function (xhr) {
+                        if(userMail.style.value===obj.user)
+                        {
+                            alert("用户存在")
+                        }
+                        else{
+                            alert("用户不存在")
+                        }
+                    },
+                    error: function (xhr) {
+                        alert(xhr.status);
+                    }
+                });
+            
+            }
+
+        </script>
+    </head>
+    <body>
+        <form> 
+            <input id="userMail" type="text" placeholder="注册邮箱">
+            <br>
+            <input id="userPsw " type="password" placeholder="密码">
+            <br>
+            <input id="btn" type="button" value="登录">
+        </form>
+    </body>
+</html>

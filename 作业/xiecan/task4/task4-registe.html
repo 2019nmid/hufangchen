@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>登陆界面</title>
+        <link rel="stylesheet" type="text/css" href="style/task-log-css.css"/>
+        <link rel="stylesheet" type="text/css" href="style/task-registe-css.css"/>
+    </head>
+    <body>
+        <div class="container demo-1">
+            <div class="content">
+                <div id="large-header" class="large-header">
+                    <canvas id="demo-canvas"></canvas>
+                    <div class="logo_box">
+                        <h3>欢迎你</h3>
+                        <div class="input_outer">
+                            <span class="u_user"></span>
+                            <input id="uname" class="text" style="color: #FFFFFF" type="text" placeholder="请输入账号">
+                        </div>
+                        <div class="input_outer">
+                            <span class="us_uer"></span>
+                            <input id="upass" class="text" style="color: #FFFFFF; position:absolute; z-index:100;" value="" type="password" placeholder="请输入密码">
+                        </div>
+                        <div class="input_outer">
+                            <span class="us_uer"></span>
+                            <input id="upass1" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;" value="" type="password" placeholder="请再次输入密码">
+                        </div>
+
+                        <div class="errorText" id="error_box"><br></div>
+                        <div>
+                            <button onclick="fnRegist()" class="rb" style="color: #FFFFFF"><a>注册</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div><!-- /container -->
+            <script src="style/task-log-js.js"></script>
+            <script src="style/task-registe-js.js"></script>
+        </div>
+    </body>
+</html>
